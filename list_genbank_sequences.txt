@@ -1,0 +1,40 @@
+sequence name:      NM_001301326.1
+length of sequence: 1020
+sequence name:      NM_001122995.2
+length of sequence: 1023
+sequence name:      NM_001044583.1
+length of sequence: 1218
+sequence name:      NM_001044550.1
+length of sequence: 2864
+sequence name:      NM_001122994.2
+length of sequence: 1201
+sequence name:      NM_001244641.1
+length of sequence: 1572
+sequence name:      NM_001297634.1
+length of sequence: 2609
+sequence name:      NM_001297633.1
+length of sequence: 2670
+sequence name:      NM_001297632.1
+length of sequence: 1846
+sequence name:      KJ729036.1
+length of sequence: 519
+sequence name:      KF280282.1
+length of sequence: 175
+sequence name:      KF280281.1
+length of sequence: 151
+sequence name:      KF280280.1
+length of sequence: 132
+sequence name:      NM_001244668.1
+length of sequence: 1402
+sequence name:      NM_001244667.1
+length of sequence: 1448
+sequence name:      NM_001244640.1
+length of sequence: 3145
+sequence name:      NM_001243579.1
+length of sequence: 1580
+sequence name:      NM_214269.2
+length of sequence: 1212
+sequence name:      KJ686126.1
+length of sequence: 878
+sequence name:      NM_001130735.1
+length of sequence: 882
