@@ -2,6 +2,7 @@ from urllib.request import urlopen  # Python 3 version of urllib2
 import pprint  # importing pretty printing
 from Bio import Entrez  # importing Entrez
 from Bio import SeqIO  # importing SeqIO
+from Bio.SeqUtils import GC
 
 # QUESTION 1
 print('*********QUESTION 1********************************************************************************************')
@@ -66,14 +67,59 @@ the_file.close()  # to ensure file saves
 
 # QUESTION 3
 print('*********QUESTION 3********************************************************************************************')
+# url of ecogene.fasta
+# Import a large set of sequences from a Fasta file: ecogene.fasta
+ecogene = urlopen('http://fenyolab.org/presentations/Introduction_Biostatistics_Bioinformatics_2015/pdf/lecture5/ecogene.fasta')
+out_f = open('ecogene.fasta', 'w')  # out will be the file that the html fasta will be written to
+ecogene_fasta = ecogene.read().decode("utf-8", "ignore")  # allows ls_orchid fasta information be retrieved from url link
+# print(fasta)  # printing to see how it looks
+out_f.write(ecogene_fasta)  # this writes the html fasta file onto ecogene fasta file in my directory
+out_f.close()  # closes the file
+name_list = []  # list of ids
+length_list_all = []  # list of all lengths as numbers
+length_list_records = []  # list to record sequences with lengths over 300
+GC_list_records = []    # list to record sequences with GC > 60
+for eco_seq_record in SeqIO.parse('ecogene.fasta', 'fasta'):
+    length_ = len(eco_seq_record.seq)
+    length_list_all.append(length_)
+    name_ = eco_seq_record.id
+    name_list.append(name_)
+    if length_ >= 300:  # getting list of sequences for with length equal to or over 300
+        length_list_records.append(eco_seq_record.seq)
+    if GC(eco_seq_record.seq) > 60:
+        GC_list_records.append(eco_seq_record.seq)
 
-# handle = Entrez.esearch(db="nucleotide",term="E coli[Orgn] AND RefSeq", idtype="refseq", rettype="gb", retmode="text", retmax='1000')
-# record = Entrez.read(handle)
-# print(record["Count"])  # count of all records
-# eco_id_list = record["IdList"]  #IDs of E coli
-# print('------------\n', eco_id_list)
+# A. How many sequences are in this file?
+print('NUMBER OF SEQ IN FILE:  ', len(name_list))
+# 4294 sequences in this file
 
-# for i in eco_id_list:
-#     eco_seq = Entrez.efetch(db="nucleotide", rettype="gb", id=i)  # getting the nucleotide sequence for HBA2
-#     gbseq = SeqIO.read(eco_seq, "genbank")
-#     print(gbseq)
+print("RECORD OF FIRST SEQUENCE IN ECOGENE FASTA FILE:")
+# B. printing sequence ID, name, and description for the first Sequence Record.
+first_record = next(SeqIO.parse("ecogene.fasta", "fasta"))
+print(first_record)
+# this record is much less detailed than the metabase genbank records in question 1:
+# ID: eschColi_K12_refSeq_b0001
+# Name: eschColi_K12_refSeq_b0001
+# Description: eschColi_K12_refSeq_b0001 range=chr:190-255 5'pad=0 3'pad=0 strand=+ repeatMasking=none
+# Number of features: 0
+# Seq('ATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGTAAC...TGA', SingleLetterAlphabet())
+
+# C. What is the total length of all of the sequences in the file (just the DNA, not
+# headers)
+print("TOTAL LENGTH OF ALL SEQ IN FILE:  ", sum(length_list_all))
+#  LENGTH OF ALL SEQ IN FILE:   4130063
+
+# D. Make a new FASTA file with just the sequences >= 300 bp in length
+length_file = open('length_over_300_sequences.txt', 'w')  # creating a file with the list of seq w/ lengths >= 300
+for s in length_list_records:   # s stands for sequence
+    length_file.write("%s\n" % s)  # this indicates the format
+
+
+length_file.close()  # to ensure file saves
+# E. Make a new FASTA file with just the sequences with %GC > 60
+GC_file = open('GC_over_60_sequences.txt', 'w')  # creating a file with the list of GC > 60 sequences
+for s in GC_list_records:   # s stands for sequence
+    GC_file.write("%s\n" % s)  # this indicates the format
+
+
+GC_file.close()     # to ensure file saves
