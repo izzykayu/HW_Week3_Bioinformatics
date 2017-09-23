@@ -1,0 +1,144 @@
+/Users/kayumetzger/anaconda/envs/Intro_to_Python/bin/python /Users/kayumetzger/PycharmProjects/HW_Week3_Bioinformatics/HW3_BioPython_ISABEL_METZGER.py
+*********QUESTION 1********************************************************************************************
+------------------HBA1 SEQUENCE ID, NAME, DESCRIPTION----------------------------------------------------------
+ID: NM_000558.4
+Name: NM_000558
+Description: Homo sapiens hemoglobin subunit alpha 1 (HBA1), mRNA
+Number of features: 32
+/molecule_type=mRNA
+/topology=linear
+/data_file_division=PRI
+/date=10-SEP-2017
+/accessions=['NM_000558']
+/sequence_version=4
+/keywords=['RefSeq']
+/source=Homo sapiens (human)
+/organism=Homo sapiens
+/taxonomy=['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+/references=[Reference(title='Dynamical differences of hemoglobin and the ionotropic glutamate receptor in different states revealed by a new dynamics alignment method', ...), Reference(title='Hemoglobin inhibits albumin uptake by proximal tubule cells: implications for sickle cell disease', ...), Reference(title='Contemporary risk estimates of three HbA1c variables in relation to heart failure following diagnosis of type 2 diabetes', ...), Reference(title='The relationship between HbA(1)c and ultrasound plaque textures in atherosclerotic patients', ...), Reference(title='Identification and characterization of two novel and differentially expressed isoforms of human alpha2- and alpha1-globin genes', ...), Reference(title='Alpha-Thalassemia', ...), Reference(title='Hemoglobin Moabit: alpha 86 (F7) Leu leads to Arg: a new unstable abnormal hemoglobin', ...), Reference(title='Hemoglobin J Rovigo (alpha53 Ala replaced by Asp) in association with beta-thalassemia', ...), Reference(title="The nucleotide sequences of the untranslated 5' regions of human alpha- and beta-globin mRNAs", ...), Reference(title='Haemoglobin G Norfolk alpha 85 (F6) Asp leads to Asn. Structural characterization by sequenator analysis and functional properties of a new variant with high oxygen affinity', ...)]
+/comment=REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+reference sequence was derived from Z84721.1, BC101846.1 and
+AI064720.1.
+This sequence is a reference standard in the RefSeqGene project.
+On Aug 9, 2014 this sequence version replaced gi:14456711.
+Summary: The human alpha globin gene cluster located on chromosome
+16 spans about 30 kb and includes seven loci: 5'- zeta - pseudozeta
+- mu - pseudoalpha-1 - alpha-2 - alpha-1 - theta - 3'. The alpha-2
+(HBA2) and alpha-1 (HBA1) coding sequences are identical. These
+genes differ slightly over the 5' untranslated regions and the
+introns, but they differ significantly over the 3' untranslated
+regions. Two alpha chains plus two beta chains constitute HbA,
+which in normal adult life comprises about 97% of the total
+hemoglobin; alpha chains combine with delta chains to constitute
+HbA-2, which with HbF (fetal hemoglobin) makes up the remaining 3%
+of adult hemoglobin. Alpha thalassemias result from deletions of
+each of the alpha genes as well as deletions of both HBA2 and HBA1;
+some nondeletion alpha thalassemias have also been reported.
+[provided by RefSeq, Jul 2008].
+Publication Note:  This RefSeq record includes a subset of the
+publications that are available for this gene. Please see the Gene
+record to access additional publications.
+                               SAMEA1965299, SAMEA1966682
+                               [ECO:0000348]
+COMPLETENESS: full length.
+/structured_comment=OrderedDict([('Evidence-Data', OrderedDict([('Transcript exon combination', 'BC005931.1, CB994937.1 [ECO:0000332]'), ('RNAseq introns', 'single sample supports all introns')]))])
+Seq('CATAAACCCTGGCGCGCTCGCGGCCCGGCACTCTTCTGGTCCCCACAGACTCAG...AAA', IUPACAmbiguousDNA())
+-------------------SEQUENCE OF HBA1----------------------------------------------------------------------------
+Seq('CATAAACCCTGGCGCGCTCGCGGCCCGGCACTCTTCTGGTCCCCACAGACTCAG...AAA', IUPACAmbiguousDNA())
+-------------------HBA2 SEQUENCE ID, NAME, AND DESCRIPTION-----------------------------------------------------
+ID: NM_000517.4
+Name: NM_000517
+Description: Homo sapiens hemoglobin subunit alpha 2 (HBA2), mRNA
+Number of features: 31
+/molecule_type=mRNA
+/topology=linear
+/data_file_division=PRI
+/date=17-SEP-2017
+/accessions=['NM_000517']
+/sequence_version=4
+/keywords=['RefSeq']
+/source=Homo sapiens (human)
+/organism=Homo sapiens
+/taxonomy=['Eukaryota', 'Metazoa', 'Chordata', 'Craniata', 'Vertebrata', 'Euteleostomi', 'Mammalia', 'Eutheria', 'Euarchontoglires', 'Primates', 'Haplorrhini', 'Catarrhini', 'Hominidae', 'Homo']
+/references=[Reference(title='A Novel Mutation of the alpha2-Globin Gene Causing alpha+-Thalassemia: Hb Nanning (HBA2: c.369_370delinsGA)', ...), Reference(title='Identification of a variation in the IVSII of alpha2 gene and its frequency in the population of Guangxi', ...), Reference(title='Inhibition of Hb Binding to GP1balpha Abrogates Hb-Mediated Thrombus Formation on Immobilized VWF and Collagen under Physiological Shear Stress', ...), Reference(title='Analysis of alpha1 and alpha2 globin genes among patients with hemoglobin Adana in Malaysia', ...), Reference(title='Identification and characterization of two novel and differentially expressed isoforms of human alpha2- and alpha1-globin genes', ...), Reference(title='Alpha-Thalassemia', ...), Reference(title="Cloning and complete nucleotide sequence of human 5'-alpha-globin gene", ...), Reference(title='A new abnormal human hemoglobin: Hb Prato (alpha 2 31 (B12) Arg leads to Ser beta 2)', ...), Reference(title='Hemoglobin Suan-Dok (alpha 2 109 (G16) Leu replaced by Arg beta 2): an unstable variant associated with alpha-thalassemia', ...), Reference(title='Hemoglobin Tarrant: alpha126(H9) Asp leads to Asn. A new hemoglobin variant in the alpha1beta1 contact region showing high oxygen affinity and reduced cooperativity', ...)]
+/comment=REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+reference sequence was derived from Z84721.1 and BC008572.1.
+This sequence is a reference standard in the RefSeqGene project.
+On Apr 4, 2008 this sequence version replaced gi:14043068.
+Summary: The human alpha globin gene cluster located on chromosome
+16 spans about 30 kb and includes seven loci: 5'- zeta - pseudozeta
+- mu - pseudoalpha-1 - alpha-2 - alpha-1 - theta - 3'. The alpha-2
+(HBA2) and alpha-1 (HBA1) coding sequences are identical. These
+genes differ slightly over the 5' untranslated regions and the
+introns, but they differ significantly over the 3' untranslated
+regions. Two alpha chains plus two beta chains constitute HbA,
+which in normal adult life comprises about 97% of the total
+hemoglobin; alpha chains combine with delta chains to constitute
+HbA-2, which with HbF (fetal hemoglobin) makes up the remaining 3%
+of adult hemoglobin. Alpha thalassemias result from deletions of
+each of the alpha genes as well as deletions of both HBA2 and HBA1;
+some nondeletion alpha thalassemias have also been reported.
+[provided by RefSeq, Jul 2008].
+Publication Note:  This RefSeq record includes a subset of the
+publications that are available for this gene. Please see the Gene
+record to access additional publications.
+                               SAMEA1965299, SAMEA1966682
+                               [ECO:0000348]
+COMPLETENESS: full length.
+/structured_comment=OrderedDict([('Evidence-Data', OrderedDict([('Transcript exon combination', 'BI670460.1, BG434989.1 [ECO:0000332]'), ('RNAseq introns', 'single sample supports all introns')]))])
+Seq('CATAAACCCTGGCGCGCTCGCGGGCCGGCACTCTTCTGGTCCCCACAGACTCAG...AAA', IUPACAmbiguousDNA())
+---------------------SEQUENCE OF HBA2--------------------------------------------------------------------------
+Seq('CATAAACCCTGGCGCGCTCGCGGGCCGGCACTCTTCTGGTCCCCACAGACTCAG...AAA', IUPACAmbiguousDNA())
+*********QUESTION 2********************************************************************************************
+['NM_001301326.1', 'NM_001122995.2', 'NM_001044583.1', 'NM_001044550.1', 'NM_001122994.2', 'NM_001244641.1', 'NM_001297634.1', 'NM_001297633.1', 'NM_001297632.1', 'KJ729036.1', 'KF280282.1', 'KF280281.1', 'KF280280.1', 'NM_001244668.1', 'NM_001244667.1', 'NM_001244640.1', 'NM_001243579.1', 'NM_214269.2', 'KJ686126.1', 'NM_001130735.1']
+sequence name:      NM_001301326.1
+length of sequence: 1020
+sequence name:      NM_001122995.2
+length of sequence: 1023
+sequence name:      NM_001044583.1
+length of sequence: 1218
+sequence name:      NM_001044550.1
+length of sequence: 2864
+sequence name:      NM_001122994.2
+length of sequence: 1201
+sequence name:      NM_001244641.1
+length of sequence: 1572
+sequence name:      NM_001297634.1
+length of sequence: 2609
+sequence name:      NM_001297633.1
+length of sequence: 2670
+sequence name:      NM_001297632.1
+length of sequence: 1846
+sequence name:      KJ729036.1
+length of sequence: 519
+sequence name:      KF280282.1
+length of sequence: 175
+sequence name:      KF280281.1
+length of sequence: 151
+sequence name:      KF280280.1
+length of sequence: 132
+sequence name:      NM_001244668.1
+length of sequence: 1402
+sequence name:      NM_001244667.1
+length of sequence: 1448
+sequence name:      NM_001244640.1
+length of sequence: 3145
+sequence name:      NM_001243579.1
+length of sequence: 1580
+sequence name:      NM_214269.2
+length of sequence: 1212
+sequence name:      KJ686126.1
+length of sequence: 878
+sequence name:      NM_001130735.1
+length of sequence: 882
+*********QUESTION 3********************************************************************************************
+NUMBER OF SEQ IN FILE:   4294
+RECORD OF FIRST SEQUENCE IN ECOGENE FASTA FILE:
+ID: eschColi_K12_refSeq_b0001
+Name: eschColi_K12_refSeq_b0001
+Description: eschColi_K12_refSeq_b0001 range=chr:190-255 5'pad=0 3'pad=0 strand=+ repeatMasking=none
+Number of features: 0
+Seq('ATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGTAAC...TGA', SingleLetterAlphabet())
+TOTAL LENGTH OF ALL SEQ IN FILE:   4130063
+
+Process finished with exit code 0
